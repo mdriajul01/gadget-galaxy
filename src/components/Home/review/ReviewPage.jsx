@@ -29,12 +29,18 @@ const ReviewPage = () => {
     <div className="p-6 max-w-2xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Customer Reviews</h1>
       <form onSubmit={handleSubmit} className="mb-6">
-        <h1>Email</h1>
+        <h1 className="ml-3 text-base text-[#dedfe0e7] font-semibold">
+          Email :
+        </h1>
         <input
           name="email"
           type="text"
-          placeholder="exampale@gmail.com" className="my-2 rounded-xl w-72 "
+          placeholder="exampale@gmail.com"
+          className="mb-3 p-3 rounded-xl w-72 "
         />
+        <h1 className="ml-3 text-base text-[#dedfe0e7] font-semibold">
+          Comment :
+        </h1>
         <textarea
           value={reviewInput}
           onChange={handleChange}
