@@ -3,7 +3,7 @@ import {
   getAuth,
   signOut,
 } from "firebase/auth";
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router";
 import { app } from "../firebase.config";
 import { FcGoogle } from "react-icons/fc";
