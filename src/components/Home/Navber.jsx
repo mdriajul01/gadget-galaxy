@@ -56,7 +56,13 @@ const Navber = () => {
               to="/blog"
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
-              Blog
+              Products
+            </Link>
+            <Link
+              to="/blog"
+              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+            >
+              Add Products
             </Link>
           </div>
           {/* Search Button */}
@@ -131,7 +137,14 @@ const Navber = () => {
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
-              Blog
+              Products
+            </Link>
+            <Link
+              to="/blog"
+              className="py-2 hover:bg-gray-700 w-full text-center"
+              onClick={toggleMobileMenu}
+            >
+              Add Products
             </Link>
             <button
               className="py-2 hover:bg-gray-700 w-full text-center"
