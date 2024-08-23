@@ -24,6 +24,7 @@ const CustomerQuestionPage = () => {
 
   return (
     <div>
+      
       <h1 className="text-center text-4xl font-semibold my-8">Have a Qustion</h1>
       <div id="body" className=" flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-[#768d9bd8] p-6 rounded-lg shadow-lg shadow-zinc-300">

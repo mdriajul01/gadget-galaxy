@@ -11,7 +11,10 @@ const ContactUs = () => {
     address: "Dhaka-1207 / Dhaka Koylanpur Road n-5",
     phone: "01761553460",
     email: "gadget.galaxy@gmail.com",
-    location: [23.777844, 90.361043], // Coordinates for New York City
+    location: [23.777844, 90.361043], 
+  };
+  const handleClick = () => {
+    window.open("https://maps.app.goo.gl/1Zc345rqqtpSGnPV6", "_blank");
   };
 
   return (
@@ -56,8 +59,12 @@ const ContactUs = () => {
       </div>
 
       <div className="text-center">
-        <button className="btn bg-blue-500 text-stone-100 text-lg">
-          Go Locetion
+        
+        <button
+          onClick={handleClick}
+          className="btn bg-blue-500 text-stone-100 text-lg"
+        >
+          Go Location
         </button>
       </div>
     </div>
