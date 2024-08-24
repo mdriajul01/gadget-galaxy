@@ -1,11 +1,14 @@
 // import React from "react";
 import logo from "../../../public/logo.png";
-import { Link, useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import React, { useContext, useState } from "react";
 import { MdShoppingCartCheckout } from "react-icons/md";
 import { RxDropdownMenu } from "react-icons/rx";
 import { BsSearchHeartFill } from "react-icons/bs";
+import { ContextSource } from "../ContextAPI/ContextAPI";
 const Navber = () => {
+  const { user, logOut } = useContext(ContextSource);
+  console.log(user);
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -17,7 +20,7 @@ const Navber = () => {
   };
   return (
     <div>
-      <nav className="bg-[#55462af5] p-4">
+      <nav className="bg-[#72613ef3] p-4">
         <div className="container lg:ml-10 flex justify-between items-center font-semibold">
           {/* Logo or Title */}
           <button className="justify-center ">
@@ -29,42 +32,42 @@ const Navber = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-4 items-center ml-5">
-            <Link
-              to="/"
+            <NavLink
+              to={"/"}
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
               Home
-            </Link>
-            <Link
-              to="/about"
+            </NavLink>
+            <NavLink
+              to={"/about"}
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
               About
-            </Link>
-            <Link
-              to="/services"
+            </NavLink>
+            <NavLink
+              to={"/services"}
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
               Services
-            </Link>
-            <Link
-              to="/contact"
+            </NavLink>
+            <NavLink
+              to={"/contact"}
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
               Contact
-            </Link>
+            </NavLink>
             <Link
-              to="/blog"
+              to={"/Product"}
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
               Products
             </Link>
-            <Link
-              to="/blog"
+            <NavLink
+              to="/new-product"
               className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
             >
               Add Products
-            </Link>
+            </NavLink>
           </div>
           {/* Search Button */}
 
@@ -78,80 +81,54 @@ const Navber = () => {
 
           {/* Search Button */}
 
-          <button
-            className="text-white text-2xl  p-2 rounded-md hidden md:block "
-            onClick={toggleSearch}
-          >
-            <input
-              type="text"
-              placeholder="  Search..."
-              className="rounded-xl"
-            />
-          </button>
-        
-            {/* Cart Icon Button */}
-            <button className="text-[#dcf027] text-3xl  hover:bg-[#ef7c2d] p-2 rounded-md hidden md:block">
-              <MdShoppingCartCheckout />
-            </button>
-
-            {/* Login Button */}
-
-            <div
-              onClick={() => navigate("/login")}
-              className="my-auto w-fit lg:mx-0 ml-auto hidden md:block just "
-            >
-              <button className="btn text-xs bg-red-500 text-white hover:bg-sky-500 hover:text-base ">
-                Login
-              </button>
-            </div>
+          {/* Cart Icon Button */}
         </div>
-         
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute left-0 w-full bg-gray-800 text-white flex flex-col items-center z-20 ">
-            <Link
-              to="/"
+            <NavLink
+              to={"/"}
               className="py-2 hover:bg-gray-700 w-full text-center "
               onClick={toggleMobileMenu}
             >
               Home
-            </Link>
-            <Link
-              to="/about"
+            </NavLink>
+            <NavLink
+              to={"/about"}
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
               About
-            </Link>
-            <Link
-              to="/services"
+            </NavLink>
+            <NavLink
+              to={"/services"}
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
               Services
-            </Link>
-            <Link
-              to="/contact"
+            </NavLink>
+            <NavLink
+              to={"/contact"}
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
               Contact
-            </Link>
-            <Link
-              to="/blog"
+            </NavLink>
+            <NavLink
+              to={"/Product"}
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
               Products
-            </Link>
-            <Link
-              to="/blog"
+            </NavLink>
+            <NavLink
+              to={"/new-product"}
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
               Add Products
-            </Link>
+            </NavLink>
             <button
               className="py-2 hover:bg-gray-700 w-full text-center flex justify-center"
               onClick={toggleSearch}
@@ -179,24 +156,95 @@ const Navber = () => {
                 />
               )}
             </button> */}
-
             {/* Cart Icon Button (Mobile) */}
-
             <button
               className="py-2 hover:bg-gray-700  text-center"
               onClick={toggleMobileMenu}
             >
               <MdShoppingCartCheckout className="text-center text-2xl" />
             </button>
-            <div onClick={() => navigate("/login")} className="p-5 ">
-              <div onClick={toggleMobileMenu} className="">
-                <button className="btn text-xl font-[48px]  bg-red-500 text-white hover:bg-sky-500 hover:text-base w-48 ">
-                  Login
+            {user ? (
+              <div className="flex gap-5">
+                <img
+                  src={user?.photoURL}
+                  className="w-12 h-12 rounded-full object-cover"
+                  alt=""
+                />
+                <div>
+                  <p>{user?.displayName}</p>
+               
+                </div>
+                <button
+                  onClick={() => logOut()}
+                  className="btn text-xl font-[48px]  bg-[#090e1a] text-white hover:bg-sky-500 hover:text-base w-26 mb-3"
+                >
+                  LogOut
                 </button>
               </div>
-            </div>
+            ) : (
+              <div onClick={() => navigate("/login")} className="p-5 ">
+                <div onClick={toggleMobileMenu} className="">
+                  <button className="btn text-xl font-[48px]  bg-red-500 text-white hover:bg-sky-500 hover:text-base w-48 ">
+                    Login
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         )}
+        <div className="container mx-auto px-4 lg:px-10 flex  lg:flex-row lg:items-center lg:justify-between font-semibold gap-5 justify-center rounded-t-xl w-full bg-[#2f3547b4] max-w-full -mb-4 shadow-2xl shadow-[#000000]">
+          {/* search and Go Button */}
+          <div className="flex justify-end lg:flex-row items-center lg:space-x-4 w-full lg:w-auto my-4 ">
+            <input
+              type="text"
+              placeholder="Search -->"
+              className="p-3 rounded-s-xl bg-white w-fit lg:w-auto py-4 focus:ring-0 focus:outline-none placeholder:text-dark2 lg:mb-0"
+            />
+            <button className="bg-primary text-white font-semibold py-4 px-6 rounded-e-xl :-mt-4 w-fit lg:w-auto hover:bg-slate-800 border-l-2 border-[#6e79f8] ">
+              Go
+            </button>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex items-center space-x-4 mt-4 lg:mt-0">
+            <button
+              aria-label="Shopping Cart"
+              className="text-[#dcf027] text-3xl hover:bg-[#ef7c2d] p-2 rounded-md hidden md:block"
+            >
+              <MdShoppingCartCheckout />
+            </button>
+
+            {/* Login Button */}
+
+            {user ? (
+              <div className="flex gap-5">
+                <img
+                  src={user?.photoURL}
+                  className="w-12 h-12 rounded-full object-cover"
+                  alt=""
+                />
+                <div>
+                  <p>{user?.displayName}</p>
+                  {/* <p>{user?.email}</p> */}
+                </div>
+                <button
+                  onClick={() => logOut()}
+                  className="btn text-xs bg-red-500 w-fit hidden md:block text-white hover:bg-sky-500 hover:text-base"
+                >
+                  LogOut
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => navigate("/login")}
+                aria-label="Login"
+                className="btn text-xs bg-red-500 w-fit hidden md:block text-white hover:bg-sky-500 hover:text-base"
+              >
+                Login
+              </button>
+            )}
+          </div>
+        </div>
       </nav>
     </div>
   );

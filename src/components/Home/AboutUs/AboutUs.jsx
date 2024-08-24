@@ -2,8 +2,10 @@
 
 import React from "react";
 import { FaBullhorn, FaGlobe, FaRocket } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const AboutUs = () => {
+  
   const sections = [
     {
       title: "Our Mission",

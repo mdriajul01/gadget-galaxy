@@ -21,8 +21,9 @@ const Registration = () => {
     const name = data.name.value;
     const email = data.email.value;
     const password = data.password.value;
-    const photo = data.url.value;
-    console.log(name, email, password, url);
+    const photo = data.photo.value;
+   
+    console.log(name, email, password, photo);
 
     const auth = getAuth(app);
     if (email && password) {
