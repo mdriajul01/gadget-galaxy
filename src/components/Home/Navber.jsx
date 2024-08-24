@@ -25,7 +25,7 @@ const Navber = () => {
           {/* Logo or Title */}
           <button className="justify-center ">
             <img className="h-20 object-cover ml-4 " src={logo} alt="" />
-            <h1 className="-mt-4 font-semibold text-lg text-[#ef7c2d]">
+            <h1 className="-mt-4 font-semibold text-lg text-[#ef7c2d] ">
               Gadget <span className="text-[#f8db89] font-medium">Galaxy</span>{" "}
             </h1>
           </button>
@@ -192,7 +192,7 @@ const Navber = () => {
             )}
           </div>
         )}
-        <div className="container mx-auto px-4 lg:px-10 flex  lg:flex-row lg:items-center lg:justify-between font-semibold gap-5 justify-center rounded-t-xl w-full bg-[#2f3547b4] max-w-full -mb-4 shadow-2xl shadow-[#000000]">
+        <div className="container mx-auto px-4 lg:px-10 flex  lg:flex-row lg:items-center lg:justify-between font-semibold gap-5 justify-center rounded-t-xl w-full bg-[#2f3547b4] max-w-full -mb-4 shadow-2xl shadow-[#000000] mt-2">
           {/* search and Go Button */}
           <div className="flex justify-end lg:flex-row items-center lg:space-x-4 w-full lg:w-auto my-4 ">
             <input
