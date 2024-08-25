@@ -13,7 +13,8 @@ import Product from "./components/Products/Product.jsx";
 import AboutUs from "./components/Home/AboutUs/AboutUs.jsx";
 import Services from "./components/Home/service/Services.jsx";
 import ContactUs from "./components/Home/ContuctUs/ContactUs.jsx";
-import Addproducts from "./components/Home/Add_product/Addproducts.jsx";
+import Add_Products from "./components/Add_product/Add_Products.jsx";
+
 
 const routes = createBrowserRouter([
   {
@@ -35,6 +36,9 @@ const routes = createBrowserRouter([
       {
         path: "/Product",
         element: <Product></Product>,
+        loader: () => {
+          return fetch("../public/jsonFile/Product.json");
+        },
       },
       {
         path: "/about",
@@ -50,7 +54,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "/new-product",
-        element: <Addproducts></Addproducts>,
+        element: <Add_Products></Add_Products>,
       },
     ],
   },

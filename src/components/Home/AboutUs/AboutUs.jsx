@@ -44,7 +44,7 @@ const AboutUs = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-8 text-center">About Us</h1>
+      <h1 className="text-4xl font-bold text-center  mt-16 mb-10">About Us</h1>
 
       {sections.map((section, index) => (
         <section key={index} className="mb-12">

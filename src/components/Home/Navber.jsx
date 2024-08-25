@@ -34,39 +34,87 @@ const Navber = () => {
           <div className="hidden md:flex space-x-4 items-center ml-5">
             <NavLink
               to={"/"}
-              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-cyan-400 underline  "
+                  : ""
+              }
             >
-              Home
+              <h1 className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded text-lg font-semibold">
+                Home
+              </h1>
             </NavLink>
             <NavLink
               to={"/about"}
-              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green-500 underline  "
+                  : ""
+              }
             >
-              About
+              <h1 className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded text-lg font-semibold">
+                About
+              </h1>
             </NavLink>
             <NavLink
               to={"/services"}
-              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green-500 underline  "
+                  : ""
+              }
             >
-              Services
+              <h1 className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded text-lg font-semibold">
+                Services
+              </h1>
             </NavLink>
             <NavLink
               to={"/contact"}
-              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green-500 underline  "
+                  : ""
+              }
             >
-              Contact
+              <h1 className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded text-lg font-semibold">
+                Contuct
+              </h1>
             </NavLink>
             <Link
               to={"/Product"}
-              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green-500 underline  "
+                  : ""
+              }
             >
-              Products
+              <h1 className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded text-lg font-semibold">
+                Shop
+              </h1>
             </Link>
             <NavLink
               to="/new-product"
-              className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green-500 underline"
+                  : ""
+              }
             >
-              Add Products
+              <h1 className="text-white hover:bg-[#ef7c2d] px-3 py-2 rounded text-lg font-semibold">
+                Add Product
+              </h1>
             </NavLink>
           </div>
           {/* Search Button */}
@@ -172,7 +220,6 @@ const Navber = () => {
                 />
                 <div>
                   <p>{user?.displayName}</p>
-               
                 </div>
                 <button
                   onClick={() => logOut()}

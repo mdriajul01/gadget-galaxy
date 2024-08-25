@@ -9,13 +9,13 @@ import Lottie from "lottie-react";
 const Services = () => {
   return (
     <div className="text-[#383030f6]">
-      <h1 className="text-center font-bold text-4xl my-5 text-gray-300">
+      <h1 className="text-center font-bold text-4xl mt-16 mb-10 text-gray-300 ">
         Services
       </h1>
 
       <div
         id="service"
-        className="text-center font-bold flex flex-wrap gap-8 justify-center"
+        className="text-center font-bold flex flex-wrap gap-8 justify-center mb-20"
       >
         <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80 hover:border-x-slate-500">
           <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
