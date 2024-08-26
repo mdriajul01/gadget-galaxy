@@ -1,5 +1,3 @@
-// @flow strict
-
 import * as React from "react";
 import { useForm } from "react-hook-form";
 
@@ -7,7 +5,6 @@ const Add_Products = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
@@ -16,65 +13,65 @@ const Add_Products = () => {
   };
 
   return (
-    <section>
-      <h1 className="text-4xl text-center font-bold text-gray-300 my-16">
+    <section className="px-4 sm:px-6 lg:px-8 py-16">
+      <h1 className="text-4xl text-center font-bold text-gray-800 mb-12">
         Add Product
       </h1>
-      <div className="w-1/3 mx-auto my-10">
-        <form className="space-y-2" onSubmit={handleSubmit(onSubmit)}>
-          <div className="w-2/3 mx-auto">
-            <label className="text-xl font-semibold" htmlFor="name">
+      <div className="max-w-3xl mx-auto">
+        <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+          <div className="w-full">
+            <label className="text-lg font-semibold" htmlFor="name">
               Gadget Name:
             </label>
-            <br />
             <input
               id="name"
               type="text"
-              className="border-2 w-full border-white rounded-xl p-1"
+              className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("name", { required: true })}
             />
-            {errors.name && <p className="text-red-500">Name is required</p>}
+            {errors.name && (
+              <p className="text-red-500 mt-1">Name is required</p>
+            )}
           </div>
-          <div className="w-2/3 mx-auto">
-            <label className="text-xl font-semibold" htmlFor="price">
+          <div className="w-full">
+            <label className="text-lg font-semibold" htmlFor="price">
               Gadget Price:
             </label>
-            <br />
             <input
               id="price"
               type="number"
-              className="border-2 w-full border-black rounded-xl p-1"
+              className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("price", { required: true })}
             />
-            {errors.price && <p className="text-red-500">Price is required</p>}
+            {errors.price && (
+              <p className="text-red-500 mt-1">Price is required</p>
+            )}
           </div>
-          <div className="w-2/3 mx-auto">
-            <label className="text-xl font-semibold" htmlFor="image">
+          <div className="w-full">
+            <label className="text-lg font-semibold" htmlFor="image">
               Enter Your Image URL:
-            </label>{" "}
-            <br />
+            </label>
             <input
               id="image"
               type="text"
-              className="border-2 w-full border-black rounded-xl p-1"
+              className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("image")}
             />
           </div>
-          <div className="w-2/3 mx-auto">
-            <label className="text-xl font-semibold" htmlFor="details">
+          <div className="w-full">
+            <label className="text-lg font-semibold" htmlFor="details">
               Enter Your Details:
-            </label>{" "}
-            <br />
+            </label>
             <textarea
               id="details"
-              className="border-2 w-full h-20 border-black rounded-xl p-1"
+              className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("details")}
             />
           </div>
-          <div className="w-2/3 mx-auto">
+          <div className="w-full">
             <button
               type="submit"
-              className="btn w-full bg-red-500 text-white hover:bg-red-600"
+              className="w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               Submit
             </button>
