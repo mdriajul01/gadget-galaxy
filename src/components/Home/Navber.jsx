@@ -161,14 +161,14 @@ const Navber = () => {
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
-              Contact
+              Contuct
             </NavLink>
             <NavLink
               to={"/Product"}
               className="py-2 hover:bg-gray-700 w-full text-center"
               onClick={toggleMobileMenu}
             >
-              Products
+              Shop
             </NavLink>
             <NavLink
               to={"/new-product"}
@@ -205,12 +205,13 @@ const Navber = () => {
               )}
             </button> */}
             {/* Cart Icon Button (Mobile) */}
-            <button
+            <NavLink
+              to="/cart"
               className="py-2 hover:bg-gray-700  text-center"
               onClick={toggleMobileMenu}
             >
               <MdShoppingCartCheckout className="text-center text-2xl" />
-            </button>
+            </NavLink>
             {user ? (
               <div className="flex gap-5">
                 <img
@@ -254,12 +255,13 @@ const Navber = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-4 mt-4 lg:mt-0">
-            <button
+            <NavLink
+              to={"/cart"}
               aria-label="Shopping Cart"
               className="text-[#dcf027] text-3xl hover:bg-[#ef7c2d] p-2 rounded-md hidden md:block"
             >
               <MdShoppingCartCheckout />
-            </button>
+            </NavLink>
 
             {/* Login Button */}
 

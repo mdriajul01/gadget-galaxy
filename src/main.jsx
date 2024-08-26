@@ -14,7 +14,7 @@ import AboutUs from "./components/Home/AboutUs/AboutUs.jsx";
 import Services from "./components/Home/service/Services.jsx";
 import ContactUs from "./components/Home/ContuctUs/ContactUs.jsx";
 import Add_Products from "./components/Add_product/Add_Products.jsx";
-
+import Cart from "./components/Cart/Cart.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -55,6 +55,10 @@ const routes = createBrowserRouter([
       {
         path: "/new-product",
         element: <Add_Products></Add_Products>,
+      },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
       },
     ],
   },

@@ -2,8 +2,8 @@ import * as React from "react";
 import dalivary from "../../../../public/jsonFile/fastdelivary.json";
 import payment from "../../../../public/jsonFile/payment (1).json";
 import quality from "../../../../public/jsonFile/payment (3).json";
-import service from "../../../../public/jsonFile/payment (4).json";
-import order from "../../../../public/jsonFile/payment (2).json";
+import service from "../../../../public/jsonFile/24hour.json";
+import order from "../../../../public/jsonFile/easy order.json";
 import Lottie from "lottie-react";
 
 const Services = () => {
@@ -17,9 +17,9 @@ const Services = () => {
         id="service"
         className="text-center font-bold flex flex-wrap gap-8 justify-center mb-20"
       >
-        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80 hover:border-x-slate-500">
+        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80">
           <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
-            <h1 className="text-xl text-gray-700">Best Services</h1>
+            <h1 className="text-xl text-gray-700">24/7 Services</h1>
             <Lottie
               animationData={service}
               className="w-24 sm:w-32 md:w-36 lg:w-44"

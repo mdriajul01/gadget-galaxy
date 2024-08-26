@@ -10,7 +10,8 @@ import AboutUs from "./AboutUs/AboutUs";
 import ContactUs from "./ContuctUs/ContactUs";
 import Qustion from "./Qustion/Qustion";
 import Bannar2 from "./Bannar/Bannar2";
-import VerticalCard from "./Cart2/VerticalCard";
+// import OtherProducts from "../Products/OtherProducts";
+
 
 // import BannerBottom from "./Bannar/BannerBottom";
 
@@ -21,12 +22,13 @@ function Home() {
       <Bages></Bages>
       <Card></Card>
       <Bannar2></Bannar2>
-      {/* <VerticalCard></VerticalCard> */}
+ 
       <Services></Services>
       <AboutUs></AboutUs>
       <ReviewPage></ReviewPage>
       <ContactUs></ContactUs>
       <Qustion></Qustion>
+     
 
 
       
