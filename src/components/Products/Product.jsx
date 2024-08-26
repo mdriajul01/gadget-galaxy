@@ -120,7 +120,7 @@ function Product() {
                   className="border relative w-full sm:w-80 lg:w-64 p-2 hover:bg-[#d19a0323] rounded-xl shadow-lg hover:shadow-xl hover:shadow-[#d19a03e5] hover:border-x-red-500 shadow-2px shadow-[#fffbf688] transition-transform transform hover:-translate-y-2"
                 >
                   <img
-                    className="w-full h-60 lg:h-44 object-cover rounded-xl"
+                    className="w-full h-60 lg:h-48 lg:object-cover md:object-cover  rounded-xl"
                     src={e?.photo}
                     alt="Gadget loading"
                   />
