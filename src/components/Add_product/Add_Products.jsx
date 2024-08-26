@@ -14,7 +14,7 @@ const Add_Products = () => {
 
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="text-4xl text-center font-bold text-gray-800 mb-12">
+      <h1 className="text-4xl text-center font-bold text-gray-200 mb-12">
         Add Product
       </h1>
       <div className="max-w-3xl mx-auto">
