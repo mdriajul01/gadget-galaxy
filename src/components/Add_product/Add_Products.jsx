@@ -49,18 +49,21 @@ const Add_Products = () => {
           </div>
           <div className="w-full">
             <label className="text-lg font-semibold" htmlFor="image">
-              Enter Your Image URL:
+              Gadget Image URL:
             </label>
             <input
               id="image"
               type="text"
               className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
-              {...register("image")}
+              {...register("image", { required: true })}
             />
+            {errors.price && (
+              <p className="text-red-500 mt-1">URL is required</p>
+            )}
           </div>
           <div className="w-full">
             <label className="text-lg font-semibold" htmlFor="details">
-              Enter Your Details:
+              Enter Gadget Details:
             </label>
             <textarea
               id="details"
