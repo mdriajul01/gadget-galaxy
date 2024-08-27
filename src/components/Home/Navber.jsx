@@ -6,6 +6,7 @@ import { MdShoppingCartCheckout } from "react-icons/md";
 import { RxDropdownMenu } from "react-icons/rx";
 import { BsSearchHeartFill } from "react-icons/bs";
 import { ContextSource } from "../ContextAPI/ContextAPI";
+// import "./Nav.css"
 const Navber = () => {
   const { user, logOut } = useContext(ContextSource);
   console.log(user);
@@ -20,7 +21,7 @@ const Navber = () => {
   };
   return (
     <div>
-      <nav className="bg-[#72613ef3] p-4">
+      <nav className=" bg-[#72613ef3] p-4">
         <div className="container lg:ml-10 flex justify-between items-center font-semibold">
           {/* Logo or Title */}
           <button className="justify-center ">
@@ -126,10 +127,6 @@ const Navber = () => {
           >
             <RxDropdownMenu />
           </button>
-
-          {/* Search Button */}
-
-          {/* Cart Icon Button */}
         </div>
 
         {/* Mobile Menu */}

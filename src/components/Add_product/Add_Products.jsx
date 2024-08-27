@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
 const Add_Products = () => {
   const {
     register,
@@ -10,6 +10,15 @@ const Add_Products = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+
+    axios
+      .post("http://localhost:3000/gadget", data) // Change from .port to .post
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (

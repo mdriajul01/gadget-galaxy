@@ -8,61 +8,39 @@ import Lottie from "lottie-react";
 
 const Services = () => {
   return (
-    <div className="text-[#383030f6]">
-      <h1 className="text-center font-bold text-4xl mt-16 mb-10 text-gray-300 ">
-        Services
+    <div className="text-[#383030f6] bg-gradient-to-b from-gray-800 via-gray-900 to-black py-16">
+      <h1 className="text-center font-bold text-5xl mb-16 text-[#e4bd51fd]">
+        Our Services
       </h1>
 
       <div
         id="service"
-        className="text-center font-bold flex flex-wrap gap-8 justify-center mb-20"
+        className="text-center font-bold flex flex-wrap gap-10 justify-center"
       >
-        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80">
-          <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
-            <h1 className="text-xl text-gray-700">24/7 Services</h1>
-            <Lottie
-              animationData={service}
-              className="w-24 sm:w-32 md:w-36 lg:w-44"
-            />
+        {[
+          { title: "24/7 Services", animation: service },
+          { title: "Fast Delivery", animation: dalivary },
+          { title: "Best Quality", animation: quality },
+          { title: "Easy Order", animation: order },
+          { title: "Easy Payment", animation: payment },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="relative group flex flex-col items-center gap-4 bg-slate-50 hover:bg-gradient-to-r from-[#ebbc3bfd] to-[#c7d66ffd] rounded-3xl p-6 sm:w-60 md:w-72 lg:w-80 transform transition-transform duration-500 hover:scale-105 hover:shadow-xl"
+          >
+            <div className="bg-[#ffffff11] group-hover:bg-[#f1eadb] rounded-3xl p-6 transition duration-500 ease-in-out transform group-hover:rotate-6">
+              <Lottie
+                animationData={item.animation}
+                className="w-28 sm:w-36 md:w-40 lg:w-48"
+                loop={true}
+              />
+              <h1 className="text-2xl font-extrabold text-gray-800 group-hover:text-[#383030] mt-4 transition-all duration-300">
+                {item.title}
+              </h1>
+            </div>
+            <div className="absolute inset-0 bg-[#e4bd51fd] opacity-0 group-hover:opacity-10 rounded-3xl transition-opacity duration-500"></div>
           </div>
-        </button>
-        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80">
-          <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
-            <h1 className="text-xl text-gray-700">Fast Delivery</h1>
-            <Lottie
-              animationData={dalivary}
-              className="w-24 sm:w-32 md:w-36 lg:w-44"
-            />
-          </div>
-        </button>
-        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80">
-          <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
-            <h1 className="text-xl text-gray-700">Best Quality</h1>
-            <Lottie
-              animationData={quality}
-              className="w-24 sm:w-32 md:w-36 lg:w-44"
-            />
-          </div>
-        </button>
-        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80">
-          <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
-            <h1 className="text-xl text-gray-700">Easy Order</h1>
-            <Lottie
-              animationData={order}
-              className="w-24 sm:w-32 md:w-36 lg:w-44"
-            />
-          </div>
-        </button>
-        <button className="flex flex-col items-center gap-4 bg-slate-50 hover:border-x-2 hover:border-slate-800 rounded-2xl p-4 sm:w-60 md:w-72 lg:w-80">
-          <div className="bg-[#928c3221] rounded-2xl p-4 hover:border-y-2">
-            <h1 className="text-xl text-gray-700">Easy Payment</h1>
-            <Lottie
-              animationData={payment}
-              loop={true}
-              className="w-24 sm:w-32 md:w-36 lg:w-44"
-            />
-          </div>
-        </button>
+        ))}
       </div>
     </div>
   );

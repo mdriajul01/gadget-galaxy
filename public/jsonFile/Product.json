@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Samsung Galaxy S23",
         "price": 799.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Cream-3448.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Cream-3448.jpg",
         "details": "The latest Samsung Galaxy S23 with high performance and stunning display.",
         "rating": 4.8
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Samsung Galaxy S23 Ultra",
         "price": 1199.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Ultra-Sky-Blue-2618.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Ultra-Sky-Blue-2618.jpg",
         "details": "Samsung Galaxy S23 Ultra with an advanced camera system and high-resolution display.",
         "rating": 4.9
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "name": "Samsung Galaxy A54",
         "price": 499.00,
-        "photo": "https://fairelectronics.com.bd/media/catalog/product/cache/01cd8b6e84de5ba656ee8bb28f2212b1/a/5/a54-v.png",
+        "image": "https://fairelectronics.com.bd/media/catalog/product/cache/01cd8b6e84de5ba656ee8bb28f2212b1/a/5/a54-v.png",
         "details": "Affordable Samsung Galaxy A54 with a balanced feature set and great performance.",
         "rating": 4.5
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "name": "Samsung Galaxy Z Fold 5",
         "price": 1799.00,
-        "photo": "https://www.custommacbd.com/cdn/shop/files/Galaxy-Z-Fold5-Blue-Custom-Mac-BD.jpg?v=1693119336",
+        "image": "https://www.custommacbd.com/cdn/shop/files/Galaxy-Z-Fold5-Blue-Custom-Mac-BD.jpg?v=1693119336",
         "details": "Innovative Samsung Galaxy Z Fold 5 with a foldable screen and high-end specs.",
         "rating": 4.7
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "name": "Samsung Galaxy Z Flip 5",
         "price": 999.00,
-        "photo": "https://images.samsung.com/is/image/samsung/assets/bd/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-highlights-sustainability-mo.jpg?imbypass=true",
+        "image": "https://images.samsung.com/is/image/samsung/assets/bd/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-highlights-sustainability-mo.jpg?imbypass=true",
         "details": "Stylish Samsung Galaxy Z Flip 5 with a compact design and foldable screen.",
         "rating": 4.6
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "name": "Samsung Galaxy A34",
         "price": 399.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A34-5G-Awesome-Graphite-4542.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A34-5G-Awesome-Graphite-4542.jpg",
         "details": "Samsung Galaxy A34 offering great value with solid performance and features.",
         "rating": 4.4
     },
@@ -51,15 +51,15 @@
         "id": 7,
         "name": "Samsung Galaxy M54",
         "price": 599,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M54-5G-Silver-1969.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M54-5G-Silver-1969.jpg",
         "details": "Samsung Galaxy M54 with a large display and powerful battery life.",
         "rating": 4.5
     },
     {
         "id": 8,
-        "name": "Samsung Galaxy Note 20 ulta",
+        "name": "Samsung Galaxy Note 20 Ultra",
         "price": 949,
-        "photo": "https://inversionesczhn.com/wp-content/uploads/2024/01/0000000276_1639694976.jpeg",
+        "image": "https://inversionesczhn.com/wp-content/uploads/2024/01/0000000276_1639694976.jpeg",
         "details": "Samsung Galaxy Note 20 Ultra with S Pen functionality and high performance.",
         "rating": 4.8
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "name": "Samsung Galaxy A74",
         "price": 449,
-        "photo": "https://fdn.gsmarena.com/imgroot/news/22/12/galaxy-a74-will-not-arrive/inline/-1200/gsmarena_001.jpg",
+        "image": "https://fdn.gsmarena.com/imgroot/news/22/12/galaxy-a74-will-not-arrive/inline/-1200/gsmarena_001.jpg",
         "details": "Versatile Samsung Galaxy A74 with a powerful processor and large screen.",
         "rating": 4.4
     },
@@ -75,7 +75,7 @@
         "id": 10,
         "name": "Samsung Galaxy M34",
         "price": 429.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M34-5G-Midnight-Blue-2195.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M34-5G-Midnight-Blue-2195.jpg",
         "details": "Samsung Galaxy M34 with long battery life and good performance for its class.",
         "rating": 4.3
     },
@@ -83,7 +83,7 @@
         "id": 11,
         "name": "Samsung Galaxy S22",
         "price": 749,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S22-5G-Violet-6458.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S22-5G-Violet-6458.jpg",
         "details": "Samsung Galaxy S22 with a compact design and high-end features.",
         "rating": 4.7
     },
@@ -91,7 +91,7 @@
         "id": 12,
         "name": "Samsung Galaxy A53",
         "price": 499,
-        "photo": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20220331_1648718243_938895.png",
+        "image": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20220331_1648718243_938895.png",
         "details": "Mid-range Samsung Galaxy A53 offering good balance of performance and price.",
         "rating": 4.5
     },
@@ -99,7 +99,7 @@
         "id": 13,
         "name": "Samsung Galaxy Z Flip 4",
         "price": 899.00,
-        "photo": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
+        "image": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
         "details": "Previous generation foldable Samsung Galaxy Z Flip 4 with premium features.",
         "rating": 4.6
     },
@@ -107,7 +107,7 @@
         "id": 14,
         "name": "Samsung Galaxy S21 FE",
         "price": 699,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/4204-91680.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/4204-91680.jpg",
         "details": "Samsung Galaxy S21 FE with flagship-level specs at a more affordable price.",
         "rating": 4.5
     },
@@ -115,7 +115,7 @@
         "id": 15,
         "name": "Samsung Galaxy A52",
         "price": 449,
-        "photo": "https://www.mobiledokan.co/wp-content/uploads/2020/12/Samsung-Galaxy-A52-4G-White.jpg",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/12/Samsung-Galaxy-A52-4G-White.jpg",
         "details": "Samsung Galaxy A52 offering solid performance and a good display.",
         "rating": 4.4
     },
@@ -123,7 +123,7 @@
         "id": 16,
         "name": "Samsung Galaxy M32",
         "price": 399.00,
-        "photo": "https://www.91-cdn.com/hub/wp-content/uploads/2021/06/samsung-galaxy-m32-image-feat.jpg",
+        "image": "https://www.91-cdn.com/hub/wp-content/uploads/2021/06/samsung-galaxy-m32-image-feat.jpg",
         "details": "Samsung Galaxy M32 with a large battery and great value for the price.",
         "rating": 4.3
     },
@@ -131,7 +131,7 @@
         "id": 17,
         "name": "Samsung Galaxy Note 20",
         "price": 849,
-        "photo": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
+        "image": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
         "details": "Samsung Galaxy Note 20 with S Pen support and high performance.",
         "rating": 4.6
     },
@@ -139,7 +139,7 @@
         "id": 18,
         "name": "Samsung Galaxy S21",
         "price": 699,
-        "photo": "https://www.gizmochina.com/wp-content/uploads/2020/12/1-12-500x500.jpg",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2020/12/1-12-500x500.jpg",
         "details": "Samsung Galaxy S21 with flagship features and sleek design.",
         "rating": 4.7
     },
@@ -147,7 +147,7 @@
         "id": 19,
         "name": "Samsung Galaxy A71",
         "price": 549,
-        "photo": "https://earifin.com/public/uploads/all/LnJsNlH3TPtdn84xlh3tCBvXeMAbjv57vbxRz6Ys.jpg",
+        "image": "https://earifin.com/public/uploads/all/LnJsNlH3TPtdn84xlh3tCBvXeMAbjv57vbxRz6Ys.jpg",
         "details": "Samsung Galaxy A71 with a large screen and good overall performance.",
         "rating": 4.4
     },
@@ -155,7 +155,7 @@
         "id": 20,
         "name": "Samsung Galaxy M51",
         "price": 479,
-        "photo": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/galaxym5455header.jpg",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/galaxym5455header.jpg",
         "details": "Samsung Galaxy M51 with an enormous battery and solid performance.",
         "rating": 4.5
     },
@@ -163,7 +163,7 @@
         "id": 21,
         "name": "Samsung Galaxy S20 FE",
         "price": 699,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/S20-FE-5G-6-128GB-DUAL-SNAPDRAGON-Cloud-White-up-8671.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/S20-FE-5G-6-128GB-DUAL-SNAPDRAGON-Cloud-White-up-8671.jpg",
         "details": "Samsung Galaxy S20 FE with flagship performance and a reasonable price.",
         "rating": 4.6
     },
@@ -171,15 +171,16 @@
         "id": 22,
         "name": "Samsung Galaxy Z Fold 4",
         "price": 1799.00,
-        "photo": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
-        "details": "Samsung Galaxy Z Fold 4 with a foldable screen and premium features.",
+        "image": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
+        "details": "Foldable Samsung Galaxy Z Fold 4 with innovative design and high-end specs.",
         "rating": 4.7
     },
+
     {
         "id": 23,
         "name": "Samsung Galaxy A50",
         "price": 349,
-        "photo": "https://rukminim2.flixcart.com/image/750/900/xif0q/mobile/t/b/3/-original-imahfay2zea8syuh.jpeg?q=20&crop=false",
+        "image": "https://rukminim2.flixcart.com/image/750/900/xif0q/mobile/t/b/3/-original-imahfay2zea8syuh.jpeg?q=20&crop=false",
         "details": "Samsung Galaxy A50 with a good display and solid performance for its price.",
         "rating": 4.3
     },
@@ -187,7 +188,7 @@
         "id": 24,
         "name": "Samsung Galaxy S10",
         "price": 599,
-        "photo": "https://www.gizmochina.com/wp-content/uploads/2019/01/Samsung-Galaxy-S10-SD855-600x600.jpg",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2019/01/Samsung-Galaxy-S10-SD855-600x600.jpg",
         "details": "Samsung Galaxy S10 with a high-quality display and premium features.",
         "rating": 4.6
     },
@@ -195,7 +196,7 @@
         "id": 25,
         "name": "Samsung Galaxy Note 20",
         "price": 699.00,
-        "photo": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
+        "image": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
         "details": "Samsung Galaxy Note 10 with S Pen and high-end performance.",
         "rating": 4.5
     },
@@ -203,7 +204,7 @@
         "id": 26,
         "name": "Apple iPhone 15",
         "price": 999,
-        "photo": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large.jpg",
+        "image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large.jpg",
         "details": "The latest Apple iPhone 15 with enhanced performance and a stunning display.",
         "rating": 4.9
     },
@@ -211,7 +212,7 @@
         "id": 27,
         "name": "Apple iPhone 15 Pro",
         "price": 1199,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
         "details": "Apple iPhone 15 Pro with advanced camera system and pro-level features.",
         "rating": 4.9
     },
@@ -219,7 +220,7 @@
         "id": 28,
         "name": "Apple iPhone 15 Pro Max",
         "price": 1399.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
         "details": "Apple iPhone 15 Pro Max with the largest screen and most advanced technology.",
         "rating": 4.8
     },
@@ -227,7 +228,7 @@
         "id": 29,
         "name": "Apple iPhone 14",
         "price": 899,
-        "photo": "https://www.custommacbd.com/cdn/shop/products/iphone-14-Plus-Starlight-Custom-Mac-BD.jpg?v=1662616522",
+        "image": "https://www.custommacbd.com/cdn/shop/products/iphone-14-Plus-Starlight-Custom-Mac-BD.jpg?v=1662616522",
         "details": "Apple iPhone 14 with high performance and a sleek design.",
         "rating": 4.8
     },
@@ -235,7 +236,7 @@
         "id": 30,
         "name": "Apple iPhone 14 Pro",
         "price": 1099,
-        "photo": "https://www.gizmochina.com/wp-content/uploads/2022/04/Apple-iPhone-14-Pro-500x500.png",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2022/04/Apple-iPhone-14-Pro-500x500.png",
         "details": "Apple iPhone 14 Pro with advanced features and enhanced camera capabilities.",
         "rating": 4.9
     },
@@ -243,7 +244,7 @@
         "id": 31,
         "name": "Apple iPhone 14 Pro Max",
         "price": 1299.00,
-        "photo": "https://kryinternational.com/wp-content/uploads/2024/02/iPhone-14-Pro-Max-price-in-bangladesh.jpg",
+        "image": "https://kryinternational.com/wp-content/uploads/2024/02/iPhone-14-Pro-Max-price-in-bangladesh.jpg",
         "details": "Apple iPhone 14 Pro Max with a large display and top-tier performance.",
         "rating": 4.8
     },
@@ -251,7 +252,7 @@
         "id": 32,
         "name": "Apple iPhone 13",
         "price": 799.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/3408-34138.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3408-34138.jpg",
         "details": "Apple iPhone 13 with a powerful A15 Bionic chip and excellent camera system.",
         "rating": 4.7
     },
@@ -259,7 +260,7 @@
         "id": 33,
         "name": "Apple iPhone 13 Mini",
         "price": 699.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/3410-42224.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3410-42224.jpg",
         "details": "Compact and powerful Apple iPhone 13 Mini with all the latest features.",
         "rating": 4.6
     },
@@ -267,7 +268,7 @@
         "id": 34,
         "name": "Apple iPhone 13 Pro",
         "price": 999.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/3412-49256.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3412-49256.jpg",
         "details": "Apple iPhone 13 Pro with advanced camera system and ProMotion display.",
         "rating": 4.8
     },
@@ -275,7 +276,7 @@
         "id": 35,
         "name": "Apple iPhone 13 Pro Max",
         "price": 1099.00,
-        "photo": "https://www.peacocks.com.bd/storage/2984/iPhone-13-pro-max-128GB.jpg",
+        "image": "https://www.peacocks.com.bd/storage/2984/iPhone-13-pro-max-128GB.jpg",
         "details": "Apple iPhone 13 Pro Max with the largest screen and professional-grade camera.",
         "rating": 4.8
     },
@@ -283,7 +284,7 @@
         "id": 36,
         "name": "Apple iPhone SE (2022)",
         "price": 429,
-        "photo": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.large.jpg",
+        "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.large.jpg",
         "details": "Compact and affordable Apple iPhone SE (2022) with powerful performance.",
         "rating": 4.5
     },
@@ -291,7 +292,7 @@
         "id": 37,
         "name": "Apple iPad Pro 12.9 (2024)",
         "price": 1099,
-        "photo": "https://images.fonearena.com/blog/wp-content/uploads/2021/09/Apple-iPad-mini-6th-Gen-1024x684.jpg",
+        "image": "https://images.fonearena.com/blog/wp-content/uploads/2021/09/Apple-iPad-mini-6th-Gen-1024x684.jpg",
         "details": "Apple iPad Pro 12.9\" with M2 chip and Liquid Retina XDR display.",
         "rating": 4.9
     },
@@ -299,7 +300,7 @@
         "id": 38,
         "name": "Apple iPad Pro 11 (2024)",
         "price": 799.00,
-        "photo": "https://images.augustman.com/wp-content/uploads/sites/2/2021/09/15121407/apple_ipad-mini_colors_09142021-840x560.jpeg",
+        "image": "https://images.augustman.com/wp-content/uploads/sites/2/2021/09/15121407/apple_ipad-mini_colors_09142021-840x560.jpeg",
         "details": "Apple iPad Pro 11\" with M2 chip and ProMotion display.",
         "rating": 4.8
     },
@@ -307,7 +308,7 @@
         "id": 39,
         "name": "Apple iPad Air (2024)",
         "price": 599,
-        "photo": "https://mcsolution.com.bd/wp-content/uploads/2024/05/Apple-iPad-AIR-M2-2024-13-inch-Purple-price-in-Bangladesh-MC-Solution-BD.webp",
+        "image": "https://mcsolution.com.bd/wp-content/uploads/2024/05/Apple-iPad-AIR-M2-2024-13-inch-Purple-price-in-Bangladesh-MC-Solution-BD.webp",
         "details": "Apple iPad Air with M1 chip and a 10.9\" Liquid Retina display.",
         "rating": 4.7
     },
@@ -315,7 +316,7 @@
         "id": 40,
         "name": "Apple iPad (10th Gen)",
         "price": 449,
-        "photo": "https://www.custommacbd.com/cdn/shop/products/ipad-2022-pink-wifi-Custom-Mac-BD.jpg?v=1667459492",
+        "image": "https://www.custommacbd.com/cdn/shop/products/ipad-2022-pink-wifi-Custom-Mac-BD.jpg?v=1667459492",
         "details": "Affordable Apple iPad with a 10.9\" display and A14 Bionic chip.",
         "rating": 4.6
     },
@@ -323,7 +324,7 @@
         "id": 41,
         "name": "Apple iPad Mini (2024)",
         "price": 499.00,
-        "photo": "https://images.news18.com/ibnlive/uploads/2023/08/untitled-design-2023-08-02t090639.163-16909474223x2.jpg?impolicy=website&width=640&height=480",
+        "image": "https://images.news18.com/ibnlive/uploads/2023/08/untitled-design-2023-08-02t090639.163-16909474223x2.jpg?impolicy=website&width=640&height=480",
         "details": "Apple iPad Mini with A15 Bionic chip and 8.3\" display.",
         "rating": 4.6
     },
@@ -331,7 +332,7 @@
         "id": 42,
         "name": "Apple Watch Series 9",
         "price": 399,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-SE-(2024)-2430.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-SE-(2024)-2430.jpg",
         "details": "Apple Watch Series 9 with advanced health features and improved performance.",
         "rating": 4.8
     },
@@ -339,7 +340,7 @@
         "id": 43,
         "name": "Apple Watch Ultra",
         "price": 799,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
         "details": "Rugged Apple Watch Ultra designed for extreme sports and adventure.",
         "rating": 4.9
     },
@@ -347,7 +348,7 @@
         "id": 44,
         "name": "Apple Watch SE (2024)",
         "price": 279,
-        "photo": "https://www.apple.com/v/apple-watch-se/p/images/meta/gps-lte__c3qujvofyvsm_og.png",
+        "image": "https://www.apple.com/v/apple-watch-se/p/images/meta/gps-lte__c3qujvofyvsm_og.png",
         "details": "Apple Watch SE with essential features at an affordable price.",
         "rating": 4.5
     },
@@ -355,7 +356,7 @@
         "id": 45,
         "name": "Apple AirPods Pro (2nd Gen)",
         "price": 249,
-        "photo": "https://www.startech.com.bd/image/cache/catalog/earbuds/apple/airpods-pro-2nd-generation/airpods-pro-2nd-generation-01-500x500.webp",
+        "image": "https://www.startech.com.bd/image/cache/catalog/earbuds/apple/airpods-pro-2nd-generation/airpods-pro-2nd-generation-01-500x500.webp",
         "details": "Apple AirPods Pro with active noise cancellation and improved audio quality.",
         "rating": 4.8
     },
@@ -363,7 +364,7 @@
         "id": 46,
         "name": "Apple AirPods (2nd Gen)",
         "price": 179.00,
-        "photo": "https://aajkinbo.net/wp-content/uploads/2023/02/Apple-AirPods-Pro-2nd-generation-with-ANC2.jpg",
+        "image": "https://aajkinbo.net/wp-content/uploads/2023/02/Apple-AirPods-Pro-2nd-generation-with-ANC2.jpg",
         "details": "Latest Apple AirPods with spatial audio and sweat resistance.",
         "rating": 4.7
     },
@@ -371,7 +372,7 @@
         "id": 47,
         "name": "Apple AirPods Max",
         "price": 549,
-        "photo": "https://aihome.com.my/wp-content/uploads/2023/01/Rod-2-9.png",
+        "image": "https://aihome.com.my/wp-content/uploads/2023/01/Rod-2-9.png",
         "details": "Premium over-ear headphones from Apple with high-fidelity audio and noise cancellation.",
         "rating": 4.9
     },
@@ -379,7 +380,7 @@
         "id": 48,
         "name": "Apple HomePod (2nd Gen)",
         "price": 299,
-        "photo": "https://pimwp.s3-accelerate.amazonaws.com/2023/01/apple-homepod-2nd-gen.webp",
+        "image": "https://pimwp.s3-accelerate.amazonaws.com/2023/01/apple-homepod-2nd-gen.webp",
         "details": "Apple HomePod with immersive sound and smart home integration.",
         "rating": 4.8
     },
@@ -387,7 +388,7 @@
         "id": 49,
         "name": "Apple HomePod Mini",
         "price": 99.00,
-        "photo": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/Apple/Airpods%20Max/airpods-max-select-pink-202011-800x800.png",
+        "image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/Apple/Airpods%20Max/airpods-max-select-pink-202011-800x800.png",
         "details": "Compact and affordable Apple HomePod Mini with high-quality audio.",
         "rating": 4.6
     },
@@ -395,7 +396,7 @@
         "id": 50,
         "name": "Apple MacBook Pro 16 (2024)",
         "price": 2399,
-        "photo": "https://mcsolution.com.bd/wp-content/uploads/2023/01/Apple-MacBook-Pro-M2-PRO-16-MC-Solution-BD-1200x1452.webp",
+        "image": "https://mcsolution.com.bd/wp-content/uploads/2023/01/Apple-MacBook-Pro-M2-PRO-16-MC-Solution-BD-1200x1452.webp",
         "details": "High-performance MacBook Pro 16\" with M2 Pro chip and large Retina display.",
         "rating": 4.9
     },
@@ -403,7 +404,7 @@
         "id": 51,
         "name": "Samsung Galaxy S23",
         "price": 799,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Cream-3448.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Cream-3448.jpg",
         "details": "The latest Samsung Galaxy S23 with high performance and stunning display.",
         "rating": 4.8
     },
@@ -411,7 +412,7 @@
         "id": 52,
         "name": "Samsung Galaxy S23 Ultra",
         "price": 1199,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Ultra-Sky-Blue-2618.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Ultra-Sky-Blue-2618.jpg",
         "details": "Samsung Galaxy S23 Ultra with an advanced camera system and high-resolution display.",
         "rating": 4.9
     },
@@ -419,7 +420,7 @@
         "id": 53,
         "name": "Samsung Galaxy A54",
         "price": 499,
-        "photo": "https://fairelectronics.com.bd/media/catalog/product/cache/01cd8b6e84de5ba656ee8bb28f2212b1/a/5/a54-v.png",
+        "image": "https://fairelectronics.com.bd/media/catalog/product/cache/01cd8b6e84de5ba656ee8bb28f2212b1/a/5/a54-v.png",
         "details": "Affordable Samsung Galaxy A54 with a balanced feature set and great performance.",
         "rating": 4.5
     },
@@ -427,7 +428,7 @@
         "id": 54,
         "name": "Samsung Galaxy Z Fold 5",
         "price": 1799.00,
-        "photo": "https://www.custommacbd.com/cdn/shop/files/Galaxy-Z-Fold5-Blue-Custom-Mac-BD.jpg?v=1693119336",
+        "image": "https://www.custommacbd.com/cdn/shop/files/Galaxy-Z-Fold5-Blue-Custom-Mac-BD.jpg?v=1693119336",
         "details": "Innovative Samsung Galaxy Z Fold 5 with a foldable screen and high-end specs.",
         "rating": 4.7
     },
@@ -435,7 +436,7 @@
         "id": 55,
         "name": "Samsung Galaxy Z Flip 5",
         "price": 999.00,
-        "photo": "https://images.samsung.com/is/image/samsung/assets/bd/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-highlights-sustainability-mo.jpg?imbypass=true",
+        "image": "https://images.samsung.com/is/image/samsung/assets/bd/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-highlights-sustainability-mo.jpg?imbypass=true",
         "details": "Stylish Samsung Galaxy Z Flip 5 with a compact design and foldable screen.",
         "rating": 4.6
     },
@@ -443,7 +444,7 @@
         "id": 56,
         "name": "Samsung Galaxy A34",
         "price": 399.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A34-5G-Awesome-Graphite-4542.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A34-5G-Awesome-Graphite-4542.jpg",
         "details": "Samsung Galaxy A34 offering great value with solid performance and features.",
         "rating": 4.4
     },
@@ -451,7 +452,7 @@
         "id": 57,
         "name": "Samsung Galaxy M54",
         "price": 599.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M54-5G-Silver-1969.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M54-5G-Silver-1969.jpg",
         "details": "Samsung Galaxy M54 with a large display and powerful battery life.",
         "rating": 4.5
     },
@@ -459,7 +460,7 @@
         "id": 58,
         "name": "Samsung Galaxy Note 20 ulta",
         "price": 949.00,
-        "photo": "https://inversionesczhn.com/wp-content/uploads/2024/01/0000000276_1639694976.jpeg",
+        "image": "https://inversionesczhn.com/wp-content/uploads/2024/01/0000000276_1639694976.jpeg",
         "details": "Samsung Galaxy Note 20 Ultra with S Pen functionality and high performance.",
         "rating": 4.8
     },
@@ -467,7 +468,7 @@
         "id": 59,
         "name": "Samsung Galaxy A74",
         "price": 449.00,
-        "photo": "https://fdn.gsmarena.com/imgroot/news/22/12/galaxy-a74-will-not-arrive/inline/-1200/gsmarena_001.jpg",
+        "image": "https://fdn.gsmarena.com/imgroot/news/22/12/galaxy-a74-will-not-arrive/inline/-1200/gsmarena_001.jpg",
         "details": "Versatile Samsung Galaxy A74 with a powerful processor and large screen.",
         "rating": 4.4
     },
@@ -475,7 +476,7 @@
         "id": 60,
         "name": "Samsung Galaxy M34",
         "price": 429.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M34-5G-Midnight-Blue-2195.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M34-5G-Midnight-Blue-2195.jpg",
         "details": "Samsung Galaxy M34 with long battery life and good performance for its class.",
         "rating": 4.3
     },
@@ -483,7 +484,7 @@
         "id": 61,
         "name": "Samsung Galaxy S22",
         "price": 749.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S22-5G-Violet-6458.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S22-5G-Violet-6458.jpg",
         "details": "Samsung Galaxy S22 with a compact design and high-end features.",
         "rating": 4.7
     },
@@ -491,7 +492,7 @@
         "id": 62,
         "name": "Samsung Galaxy A53",
         "price": 499.00,
-        "photo": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20220331_1648718243_938895.png",
+        "image": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20220331_1648718243_938895.png",
         "details": "Mid-range Samsung Galaxy A53 offering good balance of performance and price.",
         "rating": 4.5
     },
@@ -499,7 +500,7 @@
         "id": 63,
         "name": "Samsung Galaxy Z Flip 4",
         "price": 899.00,
-        "photo": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
+        "image": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
         "details": "Previous generation foldable Samsung Galaxy Z Flip 4 with premium features.",
         "rating": 4.6
     },
@@ -507,7 +508,7 @@
         "id": 64,
         "name": "Samsung Galaxy S21 FE",
         "price": 699.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/4204-91680.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/4204-91680.jpg",
         "details": "Samsung Galaxy S21 FE with flagship-level specs at a more affordable price.",
         "rating": 4.5
     },
@@ -515,7 +516,7 @@
         "id": 65,
         "name": "Samsung Galaxy A52",
         "price": 449.00,
-        "photo": "https://www.mobiledokan.co/wp-content/uploads/2020/12/Samsung-Galaxy-A52-4G-White.jpg",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/12/Samsung-Galaxy-A52-4G-White.jpg",
         "details": "Samsung Galaxy A52 offering solid performance and a good display.",
         "rating": 4.4
     },
@@ -523,7 +524,7 @@
         "id": 66,
         "name": "Samsung Galaxy M32",
         "price": 399.00,
-        "photo": "https://www.91-cdn.com/hub/wp-content/uploads/2021/06/samsung-galaxy-m32-image-feat.jpg",
+        "image": "https://www.91-cdn.com/hub/wp-content/uploads/2021/06/samsung-galaxy-m32-image-feat.jpg",
         "details": "Samsung Galaxy M32 with a large battery and great value for the price.",
         "rating": 4.3
     },
@@ -531,7 +532,7 @@
         "id": 67,
         "name": "Samsung Galaxy Note 20",
         "price": 849.00,
-        "photo": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
+        "image": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
         "details": "Samsung Galaxy Note 20 with S Pen support and high performance.",
         "rating": 4.6
     },
@@ -539,7 +540,7 @@
         "id": 68,
         "name": "Samsung Galaxy S21",
         "price": 699.00,
-        "photo": "https://www.gizmochina.com/wp-content/uploads/2020/12/1-12-500x500.jpg",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2020/12/1-12-500x500.jpg",
         "details": "Samsung Galaxy S21 with flagship features and sleek design.",
         "rating": 4.7
     },
@@ -547,7 +548,7 @@
         "id": 69,
         "name": "Samsung Galaxy A71",
         "price": 549.00,
-        "photo": "https://earifin.com/public/uploads/all/LnJsNlH3TPtdn84xlh3tCBvXeMAbjv57vbxRz6Ys.jpg",
+        "image": "https://earifin.com/public/uploads/all/LnJsNlH3TPtdn84xlh3tCBvXeMAbjv57vbxRz6Ys.jpg",
         "details": "Samsung Galaxy A71 with a large screen and good overall performance.",
         "rating": 4.4
     },
@@ -555,7 +556,7 @@
         "id": 70,
         "name": "Samsung Galaxy M51",
         "price": 479,
-        "photo": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/galaxym5455header.jpg",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/galaxym5455header.jpg",
         "details": "Samsung Galaxy M51 with an enormous battery and solid performance.",
         "rating": 4.5
     },
@@ -563,7 +564,7 @@
         "id": 71,
         "name": "Samsung Galaxy S20 FE",
         "price": 699.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/S20-FE-5G-6-128GB-DUAL-SNAPDRAGON-Cloud-White-up-8671.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/S20-FE-5G-6-128GB-DUAL-SNAPDRAGON-Cloud-White-up-8671.jpg",
         "details": "Samsung Galaxy S20 FE with flagship performance and a reasonable price.",
         "rating": 4.6
     },
@@ -571,7 +572,7 @@
         "id": 72,
         "name": "Samsung Galaxy Z Fold 4",
         "price": 1799.00,
-        "photo": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
+        "image": "https://m.media-amazon.com/images/I/610PI9zfgxL.jpg",
         "details": "Samsung Galaxy Z Fold 4 with a foldable screen and premium features.",
         "rating": 4.7
     },
@@ -579,7 +580,7 @@
         "id": 73,
         "name": "Samsung Galaxy A50",
         "price": 349.00,
-        "photo": "https://rukminim2.flixcart.com/image/750/900/xif0q/mobile/t/b/3/-original-imahfay2zea8syuh.jpeg?q=20&crop=false",
+        "image": "https://rukminim2.flixcart.com/image/750/900/xif0q/mobile/t/b/3/-original-imahfay2zea8syuh.jpeg?q=20&crop=false",
         "details": "Samsung Galaxy A50 with a good display and solid performance for its price.",
         "rating": 4.3
     },
@@ -587,7 +588,7 @@
         "id": 74,
         "name": "Samsung Galaxy S10",
         "price": 599.00,
-        "photo": "https://www.gizmochina.com/wp-content/uploads/2019/01/Samsung-Galaxy-S10-SD855-600x600.jpg",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2019/01/Samsung-Galaxy-S10-SD855-600x600.jpg",
         "details": "Samsung Galaxy S10 with a high-quality display and premium features.",
         "rating": 4.6
     },
@@ -595,7 +596,7 @@
         "id": 75,
         "name": "Samsung Galaxy Note 20",
         "price": 699.99,
-        "photo": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
+        "image": "https://image-us.samsung.com/SamsungUS/sis/N20/mweb/1.jpg",
         "details": "Samsung Galaxy Note 10 with S Pen and high-end performance.",
         "rating": 4.5
     },
@@ -603,7 +604,7 @@
         "id": 76,
         "name": "Apple iPhone 15",
         "price": 999.00,
-        "photo": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large.jpg",
+        "image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large.jpg",
         "details": "The latest Apple iPhone 15 with enhanced performance and a stunning display.",
         "rating": 4.9
     },
@@ -611,7 +612,7 @@
         "id": 77,
         "name": "Apple iPhone 15 Pro",
         "price": 1199.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
         "details": "Apple iPhone 15 Pro with advanced camera system and pro-level features.",
         "rating": 4.9
     },
@@ -619,7 +620,7 @@
         "id": 78,
         "name": "Apple iPhone 15 Pro Max",
         "price": 1399,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg",
         "details": "Apple iPhone 15 Pro Max with the largest screen and most advanced technology.",
         "rating": 4.8
     },
@@ -627,7 +628,7 @@
         "id": 79,
         "name": "Apple iPhone 14",
         "price": 899,
-        "photo": "https://www.custommacbd.com/cdn/shop/products/iphone-14-Plus-Starlight-Custom-Mac-BD.jpg?v=1662616522",
+        "image": "https://www.custommacbd.com/cdn/shop/products/iphone-14-Plus-Starlight-Custom-Mac-BD.jpg?v=1662616522",
         "details": "Apple iPhone 14 with high performance and a sleek design.",
         "rating": 4.8
     },
@@ -635,7 +636,7 @@
         "id": 80,
         "name": "Apple iPhone 14 Pro",
         "price": 1099,
-        "photo": "https://www.gizmochina.com/wp-content/uploads/2022/04/Apple-iPhone-14-Pro-500x500.png",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2022/04/Apple-iPhone-14-Pro-500x500.png",
         "details": "Apple iPhone 14 Pro with advanced features and enhanced camera capabilities.",
         "rating": 4.9
     },
@@ -643,7 +644,7 @@
         "id": 81,
         "name": "Apple iPhone 14 Pro Max",
         "price": 1299,
-        "photo": "https://kryinternational.com/wp-content/uploads/2024/02/iPhone-14-Pro-Max-price-in-bangladesh.jpg",
+        "image": "https://kryinternational.com/wp-content/uploads/2024/02/iPhone-14-Pro-Max-price-in-bangladesh.jpg",
         "details": "Apple iPhone 14 Pro Max with a large display and top-tier performance.",
         "rating": 4.8
     },
@@ -651,7 +652,7 @@
         "id": 82,
         "name": "Apple iPhone 13",
         "price": 799.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/3408-34138.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3408-34138.jpg",
         "details": "Apple iPhone 13 with a powerful A15 Bionic chip and excellent camera system.",
         "rating": 4.7
     },
@@ -659,7 +660,7 @@
         "id": 83,
         "name": "Apple iPhone 13 Mini",
         "price": 699.99,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/3410-42224.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3410-42224.jpg",
         "details": "Compact and powerful Apple iPhone 13 Mini with all the latest features.",
         "rating": 4.6
     },
@@ -667,7 +668,7 @@
         "id": 84,
         "name": "Apple iPhone 13 Pro",
         "price": 999.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/3412-49256.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3412-49256.jpg",
         "details": "Apple iPhone 13 Pro with advanced camera system and ProMotion display.",
         "rating": 4.8
     },
@@ -675,7 +676,7 @@
         "id": 85,
         "name": "Apple iPhone 13 Pro Max",
         "price": 1099.00,
-        "photo": "https://www.peacocks.com.bd/storage/2984/iPhone-13-pro-max-128GB.jpg",
+        "image": "https://www.peacocks.com.bd/storage/2984/iPhone-13-pro-max-128GB.jpg",
         "details": "Apple iPhone 13 Pro Max with the largest screen and professional-grade camera.",
         "rating": 4.8
     },
@@ -683,7 +684,7 @@
         "id": 86,
         "name": "Apple iPhone SE (2022)",
         "price": 429.00,
-        "photo": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.large.jpg",
+        "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.large.jpg",
         "details": "Compact and affordable Apple iPhone SE (2022) with powerful performance.",
         "rating": 4.5
     },
@@ -691,7 +692,7 @@
         "id": 87,
         "name": "Apple iPad Pro 12.9 (2024)",
         "price": 1099.00,
-        "photo": "https://images.fonearena.com/blog/wp-content/uploads/2021/09/Apple-iPad-mini-6th-Gen-1024x684.jpg",
+        "image": "https://images.fonearena.com/blog/wp-content/uploads/2021/09/Apple-iPad-mini-6th-Gen-1024x684.jpg",
         "details": "Apple iPad Pro 12.9\" with M2 chip and Liquid Retina XDR display.",
         "rating": 4.9
     },
@@ -699,7 +700,7 @@
         "id": 88,
         "name": "Apple iPad Pro 11 (2024)",
         "price": 799.00,
-        "photo": "https://images.augustman.com/wp-content/uploads/sites/2/2021/09/15121407/apple_ipad-mini_colors_09142021-840x560.jpeg",
+        "image": "https://images.augustman.com/wp-content/uploads/sites/2/2021/09/15121407/apple_ipad-mini_colors_09142021-840x560.jpeg",
         "details": "Apple iPad Pro 11\" with M2 chip and ProMotion display.",
         "rating": 4.8
     },
@@ -707,7 +708,7 @@
         "id": 89,
         "name": "Apple iPad Air (2024)",
         "price": 599.00,
-        "photo": "https://mcsolution.com.bd/wp-content/uploads/2024/05/Apple-iPad-AIR-M2-2024-13-inch-Purple-price-in-Bangladesh-MC-Solution-BD.webp",
+        "image": "https://mcsolution.com.bd/wp-content/uploads/2024/05/Apple-iPad-AIR-M2-2024-13-inch-Purple-price-in-Bangladesh-MC-Solution-BD.webp",
         "details": "Apple iPad Air with M1 chip and a 10.9\" Liquid Retina display.",
         "rating": 4.7
     },
@@ -715,7 +716,7 @@
         "id": 90,
         "name": "Apple iPad (10th Gen)",
         "price": 449.00,
-        "photo": "https://www.custommacbd.com/cdn/shop/products/ipad-2022-pink-wifi-Custom-Mac-BD.jpg?v=1667459492",
+        "image": "https://www.custommacbd.com/cdn/shop/products/ipad-2022-pink-wifi-Custom-Mac-BD.jpg?v=1667459492",
         "details": "Affordable Apple iPad with a 10.9\" display and A14 Bionic chip.",
         "rating": 4.6
     },
@@ -723,7 +724,7 @@
         "id": 91,
         "name": "Apple iPad Mini (2024)",
         "price": 499.00,
-        "photo": "https://images.news18.com/ibnlive/uploads/2023/08/untitled-design-2023-08-02t090639.163-16909474223x2.jpg?impolicy=website&width=640&height=480",
+        "image": "https://images.news18.com/ibnlive/uploads/2023/08/untitled-design-2023-08-02t090639.163-16909474223x2.jpg?impolicy=website&width=640&height=480",
         "details": "Apple iPad Mini with A15 Bionic chip and 8.3\" display.",
         "rating": 4.6
     },
@@ -731,7 +732,7 @@
         "id": 92,
         "name": "Apple Watch Series 9",
         "price": 399.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-SE-(2024)-2430.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-SE-(2024)-2430.jpg",
         "details": "Apple Watch Series 9 with advanced health features and improved performance.",
         "rating": 4.8
     },
@@ -739,7 +740,7 @@
         "id": 93,
         "name": "Apple Watch Ultra",
         "price": 799.00,
-        "photo": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
         "details": "Rugged Apple Watch Ultra designed for extreme sports and adventure.",
         "rating": 4.9
     },
@@ -747,7 +748,7 @@
         "id": 94,
         "name": "Apple Watch SE (2024)",
         "price": 279.00,
-        "photo": "https://www.apple.com/v/apple-watch-se/p/images/meta/gps-lte__c3qujvofyvsm_og.png",
+        "image": "https://www.apple.com/v/apple-watch-se/p/images/meta/gps-lte__c3qujvofyvsm_og.png",
         "details": "Apple Watch SE with essential features at an affordable price.",
         "rating": 4.5
     },
@@ -755,7 +756,7 @@
         "id": 95,
         "name": "Apple AirPods Pro (2nd Gen)",
         "price": 249.00,
-        "photo": "https://www.startech.com.bd/image/cache/catalog/earbuds/apple/airpods-pro-2nd-generation/airpods-pro-2nd-generation-01-500x500.webp",
+        "image": "https://www.startech.com.bd/image/cache/catalog/earbuds/apple/airpods-pro-2nd-generation/airpods-pro-2nd-generation-01-500x500.webp",
         "details": "Apple AirPods Pro with active noise cancellation and improved audio quality.",
         "rating": 4.8
     },
@@ -763,7 +764,7 @@
         "id": 96,
         "name": "Apple AirPods (2nd Gen)",
         "price": 179.00,
-        "photo": "https://aajkinbo.net/wp-content/uploads/2023/02/Apple-AirPods-Pro-2nd-generation-with-ANC2.jpg",
+        "image": "https://aajkinbo.net/wp-content/uploads/2023/02/Apple-AirPods-Pro-2nd-generation-with-ANC2.jpg",
         "details": "Latest Apple AirPods with spatial audio and sweat resistance.",
         "rating": 4.7
     },
@@ -771,7 +772,7 @@
         "id": 97,
         "name": "Apple AirPods Max",
         "price": 549,
-        "photo": "https://aihome.com.my/wp-content/uploads/2023/01/Rod-2-9.png",
+        "image": "https://aihome.com.my/wp-content/uploads/2023/01/Rod-2-9.png",
         "details": "Premium over-ear headphones from Apple with high-fidelity audio and noise cancellation.",
         "rating": 4.9
     },
@@ -779,7 +780,7 @@
         "id": 98,
         "name": "Apple HomePod (2nd Gen)",
         "price": 299.00,
-        "photo": "https://pimwp.s3-accelerate.amazonaws.com/2023/01/apple-homepod-2nd-gen.webp",
+        "image": "https://pimwp.s3-accelerate.amazonaws.com/2023/01/apple-homepod-2nd-gen.webp",
         "details": "Apple HomePod with immersive sound and smart home integration.",
         "rating": 4.8
     },
@@ -787,7 +788,7 @@
         "id": 99,
         "name": "Apple HomePod Mini",
         "price": 99.00,
-        "photo": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/Apple/Airpods%20Max/airpods-max-select-pink-202011-800x800.png",
+        "image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/Apple/Airpods%20Max/airpods-max-select-pink-202011-800x800.png",
         "details": "Compact and affordable Apple HomePod Mini with high-quality audio.",
         "rating": 4.6
     },
@@ -795,7 +796,7 @@
         "id": 100,
         "name": "Apple MacBook Pro 16 (2024)",
         "price": 2399.00,
-        "photo": "https://mcsolution.com.bd/wp-content/uploads/2023/01/Apple-MacBook-Pro-M2-PRO-16-MC-Solution-BD-1200x1452.webp",
+        "image": "https://mcsolution.com.bd/wp-content/uploads/2023/01/Apple-MacBook-Pro-M2-PRO-16-MC-Solution-BD-1200x1452.webp",
         "details": "High-performance MacBook Pro 16\" with M2 Pro chip and large Retina display.",
         "rating": 4.9
     }
