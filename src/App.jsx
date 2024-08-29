@@ -23,7 +23,7 @@ const App = () => {
       <Navber></Navber>
       <Outlet></Outlet>
       <Fotter></Fotter>
-      <button onClick={() => setCartOpen(true)}>Open Cart</button>
+      
       {cartOpen && (
         <Cart
           orderArray={orderArray}

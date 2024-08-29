@@ -203,7 +203,7 @@ const Navber = () => {
             </button> */}
             {/* Cart Icon Button (Mobile) */}
             <NavLink
-              to="/cart"
+              to="/Checkout"
               className="py-2 hover:bg-gray-700  text-center"
               onClick={toggleMobileMenu}
             >

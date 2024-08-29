@@ -22,16 +22,11 @@ function Home() {
       <Bages></Bages>
       <Card></Card>
       <Bannar2></Bannar2>
- 
       <Services></Services>
       <AboutUs></AboutUs>
       <ReviewPage></ReviewPage>
       <ContactUs></ContactUs>
-      <Qustion></Qustion>
-     
-
-
-      
+      <Qustion></Qustion>   
     </div>
   );
 }

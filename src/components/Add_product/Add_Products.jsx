@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import Swal from "sweetalert2";
 const Add_Products = () => {
   const {
     register,
@@ -14,10 +15,20 @@ const Add_Products = () => {
     axios
       .post("http://localhost:3000/gadget", data) // Change from .port to .post
       .then((res) => {
-        console.log(res);
+        if (res) {
+          Swal.fire({
+            title: "Successfully add Gadget",
+            text: "you cliced the button",
+            icon: "Succes",
+          });
+        }
       })
       .catch((err) => {
-        console.log(err);
+        Swal.fire({
+          title: "UnSuccessfully add Gadget",
+          text: "Try Again !!!",
+          icon: "error",
+        });
       });
   };
 
@@ -34,6 +45,7 @@ const Add_Products = () => {
             </label>
             <input
               id="name"
+              placeholder="Gadget Name"
               type="text"
               className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("name", { required: true })}
@@ -49,6 +61,7 @@ const Add_Products = () => {
             <input
               id="price"
               type="number"
+              placeholder="Price"
               className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("price", { required: true })}
             />
@@ -63,6 +76,7 @@ const Add_Products = () => {
             <input
               id="image"
               type="text"
+              placeholder="Img URL"
               className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("image", { required: true })}
             />
@@ -76,8 +90,21 @@ const Add_Products = () => {
             </label>
             <textarea
               id="details"
+              placeholder="Gadget Details"
               className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
               {...register("details")}
+            />
+          </div>
+          <div className="w-full">
+            <label className="text-lg font-semibold" htmlFor="details">
+              Enter Gadget Rating:
+            </label>
+            <input
+              type="number"
+              placeholder="Highest Rating 10"
+              id="rating"
+              className="border-2 border-gray-300 rounded-lg p-2 w-full mt-1"
+              {...register("rating")}
             />
           </div>
           <div className="w-full">

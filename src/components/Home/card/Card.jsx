@@ -6,6 +6,15 @@ import Product from "../../../../public/jsonFile/Product.json";
 
 const Card = () => {
   console.log(Product);
+  const handleCheckout = () => {
+    if (orderArray.length > 0) {
+      navigate("/checkout"); // Redirect to checkout page
+    } else {
+      alert(
+        "Your cart is empty. Please add some products to proceed to checkout."
+      );
+    }
+  };
   return (
     <div className="my-10">
       <h1 className="text-4xl text-center my-4 font-bold mb-10">
@@ -33,7 +42,10 @@ const Card = () => {
                 {e.rating}
               </h1>
             </a>
-            <button className="button-order btn bg-amber-600 text-white border-2 border-amber-500 mx-auto w-fit flex justify-center mb-5 rounded-xl p-1">
+            <button
+              onClick={handleCheckout}
+              className="button-order btn bg-amber-600 text-white border-2 border-amber-500 mx-auto w-fit flex justify-center mb-5 rounded-xl p-1"
+            >
               Order
             </button>
           </div>

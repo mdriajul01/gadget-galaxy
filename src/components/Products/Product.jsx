@@ -1,27 +1,41 @@
-import React, { useRef, useState } from "react";
-import products from "../../../public/jsonFile/Product.json";
-import rating from "../../../public/rating.png";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaSearch, FaTimes } from "react-icons/fa";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { motion } from "framer-motion";
+import axios from "axios";
+import rating from "../../../public/rating.png";
 import "./Product.css";
 
-function Product() {
+const Product = () => {
+  const [gadget, setgadget] = useState([]);
   const [orderArray, setOrderArray] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [sortOption, setSortOption] = useState("default");
   const [priceRange, setPriceRange] = useState([0, 3000]);
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState(null); // For the modal
   const itemsPerPage = 16;
   const inputRefs = useRef([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/gadget")
+      .then((res) => {
+        setgadget(res?.data); // Use fetched data
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const handleOrder = (index) => {
     const quantity = inputRefs.current[index]?.value || 1;
     const orderList = {
-      name: products[index].name,
-      price: products[index].price,
+      name: gadget[index].name,
+      price: gadget[index].price,
       quantity: parseInt(quantity, 10),
     };
     setOrderArray((prevOrderArray) => [...prevOrderArray, orderList]);
@@ -52,7 +66,21 @@ function Product() {
     setSelectedProduct(product);
   };
 
-  let sortedProducts = [...products]
+  const handleCloseModal = () => {
+    setSelectedProduct(null);
+  };
+
+  const handleCheckout = () => {
+    if (orderArray.length > 0) {
+      navigate("/checkout");
+    } else {
+      alert(
+        "Your cart is empty. Please add some products to proceed to checkout."
+      );
+    }
+  };
+
+  let sortedProducts = [...gadget]
     .filter(
       (product) =>
         product.name.toLowerCase().includes(searchQuery) &&
@@ -76,22 +104,12 @@ function Product() {
   return (
     <section className="my-16 px-4 sm:px-6 lg:px-8 min-h-screen">
       {/* Header */}
-      <motion.h1
-        className="text-center font-extrabold text-4xl sm:text-5xl my-10"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+      <h1 className="text-center font-extrabold text-4xl sm:text-5xl my-10 ">
         Explore Our Gadgets
-      </motion.h1>
+      </h1>
 
       {/* Search and Filters */}
-      <motion.div
-        className="flex flex-col md:flex-row items-center justify-between mb-10 space-y-4 md:space-y-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
+      <div className="flex flex-col md:flex-row items-center justify-between mb-10 space-y-4 md:space-y-0">
         {/* Search Bar */}
         <div className="relative w-full md:w-1/3">
           <input
@@ -105,12 +123,7 @@ function Product() {
         </div>
 
         {/* Sort and Price Filters */}
-        <motion.div
-          className="flex space-x-4"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-        >
+        <div className="flex space-x-4">
           <select
             className="w-40 px-4 py-3 rounded-full shadow focus:outline-none focus:ring-2 focus:ring-[#ef7c2d]"
             value={sortOption}
@@ -131,27 +144,20 @@ function Product() {
             <option value="500-1000">$500 - $1000</option>
             <option value="1000-3000">Above $1000</option>
           </select>
-        </motion.div>
+        </div>
 
         {/* Cart Button */}
-        <motion.button
+        <button
           className="flex items-center space-x-2 px-4 py-3 bg-[#7480ff] text-white rounded-full shadow hover:bg-[#655849] transition duration-300"
           onClick={() => setCartOpen(true)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
         >
           <FaShoppingCart className="text-lg" />
           <span>Cart ({orderArray.length})</span>
-        </motion.button>
-      </motion.div>
+        </button>
+      </div>
 
       {/* Products Grid */}
-      <motion.div
-        className="flex flex-wrap justify-center gap-8"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
+      <div className="flex flex-wrap justify-center gap-8">
         {paginatedProducts.length > 0 ? (
           paginatedProducts.map((product, idx) => (
             <motion.div
@@ -159,171 +165,173 @@ function Product() {
               whileHover={{ scale: 1.06, rotate: 0.3 }}
               className="card-container bg-[#425166d3] rounded-xl shadow-lg overflow-hidden transform transition duration-75 hover:shadow-2xl hover:scale-y-50 cursor-pointer w-64 gap-10"
               onClick={() => handleProductClick(product)}
-              layout
             >
-              <motion.img
+              <img
                 src={product.image}
                 alt={product.name}
                 className="card-img w-full h-44 object-cover hover:opacity-90 transition-opacity duration-75"
-                whileHover={{ scale: 1.1 }}
               />
-              <motion.div
-                className="p-5 flex flex-col"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.8 }}
-              >
-                <h2 className="text-lg font-semibold text-white hover:text-[#fffd78] transition-colors duration-75 w-3/4">
+              <div className="p-5 flex flex-col">
+                <h2 className="text-lg font-semibold text-white hover:text-[#fffd78] transition-colors duration-75 w-fit">
                   {product.name}
                 </h2>
                 <p className="text-[#f3ece9] font-bold text-xl mt-2">
                   ${product.price}
                 </p>
-                <div className="flex items-center mt-3">
+                <div className="flex justify-end -mt-6">
                   <img src={rating} alt="Rating" className="w-6 h-6" />
-                  <span className="ml-2 text-[#f1e14a] font-medium">
-                    {product.rating}
+                  <span className="text-[#f1e14a] font-semibold ">
+                    10 / {product.rating}
                   </span>
                 </div>
+
                 <div className="flex items-center mt-4 space-x-2">
-                  <motion.input
+                  <input
                     ref={(el) => (inputRefs.current[idx] = el)}
                     type="number"
                     name="count"
                     defaultValue={1}
                     min="1"
-                    className="w-16 px-3 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-[#ef7c2d]"
-                    whileFocus={{ scale: 1.05 }}
+                    className="w-16 px-3 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-[#ef7c2d] mt-5"
                   />
-                  <motion.button
-                    className="flex-1 px-4 py-2 bg-[#f3d54f] text-[#090d1b] text-semibold rounded-full shadow hover:bg-[#3a49eb]  transition duration-300"
+                  <button
+                    className="flex-1 text-balance px-4 py-2 bg-[#f3d54f] text-[#090d1b] text-semibold rounded-full shadow hover:bg-[#3a49eb]  transition mt-5 duration-300"
                     onClick={() => handleOrder(idx)}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                   >
                     Add to Cart
-                  </motion.button>
+                  </button>
                 </div>
-              </motion.div>
+
+                <button
+                  className="mt-4 bg-[#f3ece9] text-[#090d1b] py-2 rounded-full shadow hover:bg-[#3a49eb] transition duration-300"
+                  onClick={() => handleProductClick(product)}
+                >
+                  View Details
+                </button>
+              </div>
             </motion.div>
           ))
         ) : (
-          <p className="text-lg text-[#ef7c2d] font-bold">No products found.</p>
+          <p className="text-lg text-gray-500">
+            No products found matching your criteria.
+          </p>
         )}
-      </motion.div>
+      </div>
 
       {/* Pagination */}
       <div className="flex justify-center mt-10 space-x-4">
         {currentPage > 1 && (
-          <motion.button
+          <button
             className="px-4 py-2 bg-[#7480ff] text-white rounded-full shadow hover:bg-[#655849] transition duration-300"
-            onClick={() => setCurrentPage((prev) => prev - 1)}
-            whileHover={{ scale: 1.1 }}
+            onClick={() => setCurrentPage(currentPage - 1)}
           >
-            <IoIosArrowDropleft />
-          </motion.button>
+            <IoIosArrowDropleft className="text-xl" />
+          </button>
         )}
-        {currentPage < totalPages && (
-          <motion.button
-            className="px-4 py-2 bg-[#7480ff] text-white rounded-full shadow hover:bg-[#655849] transition duration-300"
-            onClick={() => setCurrentPage((prev) => prev + 1)}
-            whileHover={{ scale: 1.1 }}
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            className={`px-4 py-2 rounded-full shadow ${
+              currentPage === index + 1
+                ? "bg-[#f8db89] text-[#090d1b]"
+                : "bg-[#7480ff] text-white hover:bg-[#655849]"
+            } transition duration-300`}
+            onClick={() => setCurrentPage(index + 1)}
           >
-            <IoIosArrowDropright />
-          </motion.button>
+            {index + 1}
+          </button>
+        ))}
+        {currentPage < totalPages && (
+          <button
+            className="px-4 py-2 bg-[#7480ff] text-white rounded-full shadow hover:bg-[#655849] transition duration-300"
+            onClick={() => setCurrentPage(currentPage + 1)}
+          >
+            <IoIosArrowDropright className="text-xl" />
+          </button>
         )}
       </div>
 
       {/* Cart Overlay */}
       {cartOpen && (
-        <motion.div
-          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <motion.div
-            className="bg-white rounded-lg p-8 relative max-w-3xl w-full mx-4"
-            initial={{ scale: 0.5 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <motion.button
-              className="absolute top-4 right-4 text-gray-600 hover:text-red-600 transition duration-200"
-              onClick={() => setCartOpen(false)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaTimes size={20} />
-            </motion.button>
-            <h2 className="text-2xl font-semibold mb-6 text-gray-800">
-              Shopping Cart
-            </h2>
-            <ul className="mb-6 space-y-4">
-              {orderArray.map((order, idx) => (
-                <li key={idx} className="flex justify-between items-center">
-                  <span className="text-gray-700">
-                    {order.name} x {order.quantity}
-                  </span>
-                  <span className="font-semibold text-gray-900">
-                    ${order.price * order.quantity}
-                  </span>
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end">
+          <div className="bg-white w-1/3 p-8">
+            <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
+            <ul>
+              {orderArray.map((item, index) => (
+                <li key={index} className="mb-4">
+                  <p>{item.name}</p>
+                  <p>
+                    ${item.price} x {item.quantity} = $
+                    {item.price * item.quantity}
+                  </p>
                 </li>
               ))}
             </ul>
-            <div className="flex justify-between items-center text-xl font-bold text-gray-900 mb-6">
-              <span>Total:</span>
-              <span>${calculateTotal()}</span>
+            <div className="border-t-2 pt-4 mt-4">
+              <p className="text-lg font-semibold">
+                Total: ${calculateTotal()}
+              </p>
+              <button
+                className="mt-4 w-full px-4 py-2 bg-[#f8db89] text-[#090d1b] rounded-full shadow hover:bg-[#ef7c2d] transition duration-300"
+                onClick={handleCheckout}
+              >
+                Checkout
+              </button>
+              <button
+                className="mt-4 w-full px-4 py-2 bg-[#7480ff] text-white rounded-full shadow hover:bg-[#655849] transition duration-300"
+                onClick={() => setCartOpen(false)}
+              >
+                Close Cart
+              </button>
             </div>
-            <button className="w-full px-4 py-3 bg-[#7480ff] text-white rounded-full shadow hover:bg-[#655849] transition duration-300">
-              Checkout
-            </button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
 
       {/* Product Details Modal */}
       {selectedProduct && (
-        <motion.div
-          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <motion.div
-            className="bg-white rounded-lg p-8 relative max-w-3xl w-full mx-4"
-            initial={{ scale: 0.5 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <motion.button
-              className="absolute top-4 right-4 text-gray-600 hover:text-red-600 transition duration-200"
-              onClick={() => setSelectedProduct(null)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+        <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center">
+          <div className="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg shadow-lg relative">
+            <button
+              className="absolute top-4 right-4 text-gray-900 hover:text-black"
+              onClick={handleCloseModal}
             >
-              <FaTimes size={20} />
-            </motion.button>
-            <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+              <FaTimes className="text-xl" />
+            </button>
+            <h2 className="text-2xl text-center text-orange-500 font-bold mb-4">
               {selectedProduct.name}
             </h2>
-            <motion.img
+            <img
               src={selectedProduct.image}
               alt={selectedProduct.name}
-              className="w-full h-64 object-cover rounded-md mb-6"
-              whileHover={{ scale: 1.1 }}
+              className="flex items-center w-fit h-96  object-cover rounded"
             />
-            <p className="text-lg text-gray-700 mb-4">
-              {selectedProduct.description}
+            <p className="text-lg text-slate-950 font-semibold mb-2">
+              Price: ${selectedProduct.price}
             </p>
-            <p className="text-xl font-semibold text-gray-900">
-              ${selectedProduct.price}
+            <div className="flex items-center mb-4">
+              <img src={rating} alt="Rating" className="w-6 h-6 mr-2" />
+              <span className="text-[#fd6500] font-semibold ">
+                10 / {selectedProduct.rating}
+              </span>
+            </div>
+            <p className="text-lg font-semibold w-fit mb-2">
+              details: {selectedProduct.details}
             </p>
-          </motion.div>
-        </motion.div>
+            <button
+              className="mt-4 w-full px-4 py-2 bg-[#f8db89] text-[#090d1b] rounded-full shadow hover:bg-[#ef7c2d] transition duration-300"
+              onClick={() => {
+                handleOrder(selectedProduct);
+                handleCloseModal();
+              }}
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
       )}
     </section>
   );
-}
+};
 
 export default Product;
