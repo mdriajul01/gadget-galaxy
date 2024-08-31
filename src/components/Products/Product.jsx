@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import rating from "../../../public/rating.png";
 import "./Product.css";
+import product from "../../../public/jsonFile/Product.json"
+
 
 const Product = () => {
   const [gadget, setgadget] = useState([]);
@@ -16,7 +18,7 @@ const Product = () => {
   const [sortOption, setSortOption] = useState("default");
   const [priceRange, setPriceRange] = useState([0, 3000]);
   const [selectedProduct, setSelectedProduct] = useState(null); // For the modal
-  const itemsPerPage = 16;
+  const itemsPerPage = 12;
   const inputRefs = useRef([]);
   const navigate = useNavigate();
 
@@ -36,6 +38,8 @@ const Product = () => {
     const orderList = {
       name: gadget[index].name,
       price: gadget[index].price,
+      name: product[index].name,
+      price: product[index].price,
       quantity: parseInt(quantity, 10),
     };
     setOrderArray((prevOrderArray) => [...prevOrderArray, orderList]);
@@ -80,7 +84,7 @@ const Product = () => {
     }
   };
 
-  let sortedProducts = [...gadget]
+  let sortedProducts = [...product, ...gadget]
     .filter(
       (product) =>
         product.name.toLowerCase().includes(searchQuery) &&
